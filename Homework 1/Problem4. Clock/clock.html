@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    CurrentTime = function(){
+        var time = new  Date();
+        var hh = time.getHours();
+        var mm = time.getMinutes();
+        if (mm < 10)
+          mm = "0" + mm;
+        var ss = time.getSeconds();
+        if (ss < 10)
+            ss = "0" + ss;
+        document.getElementById("TimeBox").innerHTML = hh + ":"+ mm + ":" + ss;
+    };
+    setInterval(CurrentTime, 1000)
+</script>
+<h1>The Current time is:</h1>
+<a id="TimeBox"></a>
+</body>
+</html>
