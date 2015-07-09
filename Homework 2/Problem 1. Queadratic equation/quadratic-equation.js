@@ -14,3 +14,4 @@ function quadraticequation(a,b,c){
         console.log('X1 = ' + x1 + ',  X2= ' + x2)
     }
 }
+
